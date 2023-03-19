@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on darwin)" generated="20230317 20:36:03.433" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on darwin)" generated="20230318 21:32:30.453" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="/Users/zacharysanchez/PycharmProjects/WikiRobotFrame/tests">
 <suite id="s1-s1" name="Test Saving Wiki Articles" source="/Users/zacharysanchez/PycharmProjects/WikiRobotFrame/tests/test_saving_wiki_articles.robot">
 <test id="s1-s1-t1" name="Verify Unsuccessful Login" line="22">
@@ -8,16 +8,16 @@
 <arg>${browser_name}</arg>
 <arg>executable_path=resources/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20230317 20:36:03.529" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
-<status status="PASS" starttime="20230317 20:36:03.528" endtime="20230317 20:36:06.213"/>
+<msg timestamp="20230318 21:32:30.547" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20230318 21:32:30.547" endtime="20230318 21:32:33.164"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230317 20:36:06.214" level="INFO">Opening url 'https://www.wikipedia.org/'</msg>
-<status status="PASS" starttime="20230317 20:36:06.213" endtime="20230317 20:36:06.894"/>
+<msg timestamp="20230318 21:32:33.165" level="INFO">Opening url 'https://www.wikipedia.org/'</msg>
+<status status="PASS" starttime="20230318 21:32:33.164" endtime="20230318 21:32:33.845"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:03.528" endtime="20230317 20:36:06.894"/>
+<status status="PASS" starttime="20230318 21:32:30.547" endtime="20230318 21:32:33.845"/>
 </kw>
 <kw name="Validate And Select Available Language" library="LanguagePage">
 <arg>${language_choice}</arg>
@@ -26,23 +26,23 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${page_locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230317 20:36:06.894" endtime="20230317 20:36:06.919"/>
+<status status="PASS" starttime="20230318 21:32:33.845" endtime="20230318 21:32:33.872"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:06.894" endtime="20230317 20:36:06.919"/>
+<status status="PASS" starttime="20230318 21:32:33.845" endtime="20230318 21:32:33.872"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${language_choice}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230317 20:36:06.927" level="INFO">Current page contains text 'English'.</msg>
-<status status="PASS" starttime="20230317 20:36:06.919" endtime="20230317 20:36:06.927"/>
+<msg timestamp="20230318 21:32:33.889" level="INFO">Current page contains text 'English'.</msg>
+<status status="PASS" starttime="20230318 21:32:33.872" endtime="20230318 21:32:33.889"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://div/a[strong='${language_choice}']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:06.928" level="INFO">Clicking element 'xpath://div/a[strong='English']'.</msg>
-<status status="PASS" starttime="20230317 20:36:06.927" endtime="20230317 20:36:08.239"/>
+<msg timestamp="20230318 21:32:33.890" level="INFO">Clicking element 'xpath://div/a[strong='English']'.</msg>
+<status status="PASS" starttime="20230318 21:32:33.890" endtime="20230318 21:32:35.895"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:06.894" endtime="20230317 20:36:08.239"/>
+<status status="PASS" starttime="20230318 21:32:33.845" endtime="20230318 21:32:35.895"/>
 </kw>
 <kw name="Click Link To Open Login Form" library="MainPage">
 <kw name="Wait Until Element Passed Is Visible" library="Generic">
@@ -50,17 +50,17 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${page_locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230317 20:36:08.239" endtime="20230317 20:36:08.253"/>
+<status status="PASS" starttime="20230318 21:32:35.896" endtime="20230318 21:32:35.911"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:08.239" endtime="20230317 20:36:08.253"/>
+<status status="PASS" starttime="20230318 21:32:35.896" endtime="20230318 21:32:35.911"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${go_to_login_page}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:08.253" level="INFO">Clicking element 'css:#pt-login-2'.</msg>
-<status status="PASS" starttime="20230317 20:36:08.253" endtime="20230317 20:36:10.282"/>
+<msg timestamp="20230318 21:32:35.912" level="INFO">Clicking element 'css:#pt-login-2'.</msg>
+<status status="PASS" starttime="20230318 21:32:35.911" endtime="20230318 21:32:36.613"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:08.239" endtime="20230317 20:36:10.282"/>
+<status status="PASS" starttime="20230318 21:32:35.895" endtime="20230318 21:32:36.613"/>
 </kw>
 <kw name="Fill The Login Form And Submit" library="LoginPage">
 <arg>${user_name}</arg>
@@ -69,25 +69,25 @@
 <arg>css:#wpName1</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:10.283" level="INFO">Typing text 'YellowIstari' into text field 'css:#wpName1'.</msg>
-<status status="PASS" starttime="20230317 20:36:10.283" endtime="20230317 20:36:10.354"/>
+<msg timestamp="20230318 21:32:36.614" level="INFO">Typing text 'YellowIstari' into text field 'css:#wpName1'.</msg>
+<status status="PASS" starttime="20230318 21:32:36.614" endtime="20230318 21:32:36.676"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>css:#wpPassword1</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:10.354" level="INFO">Typing password into text field 'css:#wpPassword1'.</msg>
-<msg timestamp="20230317 20:36:10.367" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230317 20:36:10.378" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230317 20:36:10.354" endtime="20230317 20:36:10.378"/>
+<msg timestamp="20230318 21:32:36.676" level="INFO">Typing password into text field 'css:#wpPassword1'.</msg>
+<msg timestamp="20230318 21:32:36.686" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230318 21:32:36.697" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230318 21:32:36.676" endtime="20230318 21:32:36.697"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:10.378" level="INFO">Clicking button 'css:#wpLoginAttempt'.</msg>
-<status status="PASS" starttime="20230317 20:36:10.378" endtime="20230317 20:36:11.504"/>
+<msg timestamp="20230318 21:32:36.698" level="INFO">Clicking button 'css:#wpLoginAttempt'.</msg>
+<status status="PASS" starttime="20230318 21:32:36.697" endtime="20230318 21:32:37.465"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:10.282" endtime="20230317 20:36:11.504"/>
+<status status="PASS" starttime="20230318 21:32:36.614" endtime="20230318 21:32:37.465"/>
 </kw>
 <kw name="Verify Error Message Is Correct" library="LoginPage">
 <arg>${error_message}</arg>
@@ -96,261 +96,50 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${page_locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230317 20:36:11.504" endtime="20230317 20:36:11.550"/>
+<status status="PASS" starttime="20230318 21:32:37.466" endtime="20230318 21:32:37.508"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:11.504" endtime="20230317 20:36:11.550"/>
+<status status="PASS" starttime="20230318 21:32:37.466" endtime="20230318 21:32:37.508"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${error_text}</arg>
 <arg>Incorrect username or password entered. Please try again.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230317 20:36:11.551" level="INFO">Verifying element 'css:.mw-message-box-error.mw-message-box' contains exact text 'Incorrect username or password entered. Please try again.'.</msg>
-<msg timestamp="20230317 20:36:11.707" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230317 20:36:11.707" level="FAIL">The text of element 'css:.mw-message-box-error.mw-message-box' should have been 'Incorrect username or password entered. Please try again.' but it was 'There are problems with some of your input.'.</msg>
-<status status="FAIL" starttime="20230317 20:36:11.550" endtime="20230317 20:36:11.710"/>
+<msg timestamp="20230318 21:32:37.508" level="INFO">Verifying element 'css:.mw-message-box-error.mw-message-box' contains exact text 'Incorrect username or password entered. Please try again.'.</msg>
+<status status="PASS" starttime="20230318 21:32:37.508" endtime="20230318 21:32:37.525"/>
 </kw>
-<status status="FAIL" starttime="20230317 20:36:11.504" endtime="20230317 20:36:11.710"/>
+<status status="PASS" starttime="20230318 21:32:37.465" endtime="20230318 21:32:37.525"/>
 </kw>
 <kw name="Close Browser Session" library="Generic" type="TEARDOWN">
 <kw name="Delete All Cookies" library="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" starttime="20230317 20:36:11.710" endtime="20230317 20:36:11.718"/>
+<status status="PASS" starttime="20230318 21:32:37.525" endtime="20230318 21:32:37.528"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230317 20:36:11.718" endtime="20230317 20:36:12.149"/>
+<status status="PASS" starttime="20230318 21:32:37.528" endtime="20230318 21:32:37.944"/>
 </kw>
-<status status="PASS" starttime="20230317 20:36:11.710" endtime="20230317 20:36:12.149"/>
+<status status="PASS" starttime="20230318 21:32:37.525" endtime="20230318 21:32:37.944"/>
 </kw>
 <tag>SMOKE</tag>
-<status status="FAIL" starttime="20230317 20:36:03.528" endtime="20230317 20:36:12.149">The text of element 'css:.mw-message-box-error.mw-message-box' should have been 'Incorrect username or password entered. Please try again.' but it was 'There are problems with some of your input.'.</status>
-</test>
-<test id="s1-s1-t2" name="End To End Topic Search/Bookmark Validation" line="29">
-<kw name="Open Browser With url" library="Generic" type="SETUP">
-<kw name="Create Webdriver" library="SeleniumLibrary">
-<arg>${browser_name}</arg>
-<arg>executable_path=resources/${browser_name}</arg>
-<doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20230317 20:36:12.150" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
-<status status="PASS" starttime="20230317 20:36:12.150" endtime="20230317 20:36:14.771"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230317 20:36:14.772" level="INFO">Opening url 'https://www.wikipedia.org/'</msg>
-<status status="PASS" starttime="20230317 20:36:14.772" endtime="20230317 20:36:15.665"/>
-</kw>
-<status status="PASS" starttime="20230317 20:36:12.149" endtime="20230317 20:36:15.665"/>
-</kw>
-<kw name="Validate And Select Available Language" library="LanguagePage">
-<arg>${language_choice}</arg>
-<kw name="Wait Until Element Passed Is Visible" library="Generic">
-<arg>${language_links}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${page_locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230317 20:36:15.665" endtime="20230317 20:36:15.695"/>
-</kw>
-<status status="PASS" starttime="20230317 20:36:15.665" endtime="20230317 20:36:15.695"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${language_choice}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230317 20:36:15.710" level="INFO">Current page contains text 'English'.</msg>
-<status status="PASS" starttime="20230317 20:36:15.695" endtime="20230317 20:36:15.710"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://div/a[strong='${language_choice}']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:15.710" level="INFO">Clicking element 'xpath://div/a[strong='English']'.</msg>
-<status status="PASS" starttime="20230317 20:36:15.710" endtime="20230317 20:36:17.038"/>
-</kw>
-<status status="PASS" starttime="20230317 20:36:15.665" endtime="20230317 20:36:17.038"/>
-</kw>
-<kw name="Click Link To Open Login Form" library="MainPage">
-<kw name="Wait Until Element Passed Is Visible" library="Generic">
-<arg>${featured_articles}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${page_locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230317 20:36:17.038" endtime="20230317 20:36:17.100"/>
-</kw>
-<status status="PASS" starttime="20230317 20:36:17.038" endtime="20230317 20:36:17.100"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${go_to_login_page}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:17.100" level="INFO">Clicking element 'css:#pt-login-2'.</msg>
-<status status="PASS" starttime="20230317 20:36:17.100" endtime="20230317 20:36:18.312"/>
-</kw>
-<status status="PASS" starttime="20230317 20:36:17.038" endtime="20230317 20:36:18.312"/>
-</kw>
-<kw name="Fill The Login Form And Submit" library="LoginPage">
-<arg>${user_name}</arg>
-<arg>${valid_pass}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>css:#wpName1</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:18.313" level="INFO">Typing text 'YellowIstari' into text field 'css:#wpName1'.</msg>
-<status status="PASS" starttime="20230317 20:36:18.313" endtime="20230317 20:36:18.383"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>css:#wpPassword1</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:18.383" level="INFO">Typing password into text field 'css:#wpPassword1'.</msg>
-<msg timestamp="20230317 20:36:18.393" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230317 20:36:18.405" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230317 20:36:18.383" endtime="20230317 20:36:18.405"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${login_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230317 20:36:18.405" level="INFO">Clicking button 'css:#wpLoginAttempt'.</msg>
-<status status="PASS" starttime="20230317 20:36:18.405" endtime="20230317 20:36:19.588"/>
-</kw>
-<status status="PASS" starttime="20230317 20:36:18.312" endtime="20230317 20:36:19.588"/>
-</kw>
-<kw name="Search Topics And Save To Watchlist" library="Search">
-<arg>${topic_list}</arg>
-<msg timestamp="20230317 20:36:19.588" level="INFO">Typing text 'Francisco Goya' into text field 'css:#searchInput'.</msg>
-<msg timestamp="20230317 20:36:20.289" level="INFO">Clicking button 'xpath://form[@id='searchform']/div/button'.</msg>
-<msg timestamp="20230317 20:36:39.611" level="FAIL">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.findElements@chrome://remote/content/marionette/driver.sys.mjs:1525:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-</msg>
-<status status="FAIL" starttime="20230317 20:36:19.588" endtime="20230317 20:36:39.615"/>
-</kw>
-<kw name="Verify Topics Are Saved And Logout" library="WatchlistPage">
-<status status="NOT RUN" starttime="20230317 20:36:39.615" endtime="20230317 20:36:39.615"/>
-</kw>
-<kw name="Close Browser Session" library="Generic" type="TEARDOWN">
-<kw name="Delete All Cookies" library="SeleniumLibrary">
-<doc>Deletes all cookies.</doc>
-<msg timestamp="20230317 20:36:39.619" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.sys.mjs:2327:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-</msg>
-<msg timestamp="20230317 20:36:39.619" level="FAIL">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.deleteAllCookies@chrome://remote/content/marionette/driver.sys.mjs:2056:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-</msg>
-<status status="FAIL" starttime="20230317 20:36:39.616" endtime="20230317 20:36:39.620"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230317 20:36:39.620" endtime="20230317 20:36:39.994"/>
-</kw>
-<status status="FAIL" starttime="20230317 20:36:39.615" endtime="20230317 20:36:39.995">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.deleteAllCookies@chrome://remote/content/marionette/driver.sys.mjs:2056:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-</status>
-</kw>
-<tag>REGRESSION</tag>
-<status status="FAIL" starttime="20230317 20:36:12.149" endtime="20230317 20:36:39.995">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.findElements@chrome://remote/content/marionette/driver.sys.mjs:1525:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-
-
-Also teardown failed:
-NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.deleteAllCookies@chrome://remote/content/marionette/driver.sys.mjs:2056:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-</status>
+<status status="PASS" starttime="20230318 21:32:30.547" endtime="20230318 21:32:37.944"/>
 </test>
 <doc>To validate the Login form</doc>
-<status status="FAIL" starttime="20230317 20:36:03.441" endtime="20230317 20:36:39.995"/>
+<status status="PASS" starttime="20230318 21:32:30.461" endtime="20230318 21:32:37.944"/>
 </suite>
-<status status="FAIL" starttime="20230317 20:36:03.434" endtime="20230317 20:36:39.996"/>
+<status status="PASS" starttime="20230318 21:32:30.454" endtime="20230318 21:32:37.945"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">REGRESSION</stat>
-<stat pass="0" fail="1" skip="0">SMOKE</stat>
+<stat pass="1" fail="0" skip="0">SMOKE</stat>
 </tag>
 <suite>
-<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s1" name="Test Saving Wiki Articles">Tests.Test Saving Wiki Articles</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Saving Wiki Articles">Tests.Test Saving Wiki Articles</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230317 20:36:39.619" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
-Stacktrace:
-RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:434:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
-GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.sys.mjs:2327:15
-despatch@chrome://remote/content/marionette/server.sys.mjs:303:40
-execute@chrome://remote/content/marionette/server.sys.mjs:276:16
-onPacket/&lt;@chrome://remote/content/marionette/server.sys.mjs:249:20
-onPacket@chrome://remote/content/marionette/server.sys.mjs:250:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.sys.mjs:496:20
-</msg>
 </errors>
 </robot>
